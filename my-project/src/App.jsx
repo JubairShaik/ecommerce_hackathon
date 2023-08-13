@@ -11,6 +11,9 @@ import Chairs from "./components/Categories-pages/Chairs";
 import SkinCare from "./components/Categories-pages/SkinCare";
 import ProductPage, { CartContext } from "./pages/ProductPage";
 import { useEffect, useState } from "react";
+ 
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 function App() {
   const [cartItem, setCartItem] = useState([]);

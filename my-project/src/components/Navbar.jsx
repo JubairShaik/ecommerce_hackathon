@@ -1,6 +1,8 @@
 import "./Navbar.css";
 
  
+
+
 import { Link } from "react-router-dom";
 import { useContext, useState } from "react";
 import CartWithItems from "./CartWithItems";
@@ -57,6 +59,7 @@ function Navbar() {
           >
             product page
           </Link>
+          
         </div>
       </div>
 
@@ -65,6 +68,8 @@ function Navbar() {
         onClick={openCart}
         className={`page-overlay ${cart ? "open-flex" : "closed-flex"}`}
       ></div>
+
+
 
       {/* cart */}
       <div className={`cart-div ${cart ? "open-cart" : "closed-cart"}`}>
