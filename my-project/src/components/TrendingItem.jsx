@@ -9,15 +9,15 @@ function TrendingItem() {
       {filteredItems.map((item) => (
         <div key={item.id} className="row-item">
           <Link
-            onClick={() => window.top(0, 0)}
             to={`/categories/product/${item.id}`}
+            onClick={() => window.scrollTo(0, 0)}
           >
             <div className="item-header">
               <img src={item.img} alt="product" />
             </div>
             <div className="item-description">
               <p>{item.description}</p>
-              <p className="item-price">{item.price}$</p>
+              <p className="item-price">{item.price} ₹ </p>
             </div>
           </Link>
         </div>

@@ -7,18 +7,19 @@ function ProductItem() {
 
   return (
     <>
+    
       {filteredItems.map((item) => (
         <div key={item.id} className="product normal">
           <Link
-            onClick={() => window.top(0, 0)}
             to={`/categories/product/${item.id}`}
+            onClick={() => window.scrollTo(0, 0)}
           >
             <div className="product-header">
               <img src={item.img} alt="product1" />
             </div>
             <div className="product-details">
               <p>{item.description}</p>
-              <p className="item-price">{item.price}$</p>
+              <p className="item-price">{item.price} ₹ </p>
             </div>
           </Link>
         </div>

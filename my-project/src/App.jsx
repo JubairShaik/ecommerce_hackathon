@@ -39,6 +39,7 @@ function App() {
   return (
     <CartContext.Provider value={{ cartItem, addToCart, setCartItem }}>
       <Navbar />
+      
       <Routes>
         <Route index path="/" element={<Home />} />
 
